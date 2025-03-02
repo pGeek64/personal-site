@@ -1,0 +1,39 @@
+/* align all the body items to center */
+/* make background media/bg.htm */
+
+body {
+    text-align: center;
+    margin: 0;
+    
+    background-image: url('./media/starb.gif'); /* Replace with your image path */
+    background-repeat: repeat; /* Allows repeating if necessary */
+    background-size: auto;
+    padding: 0;
+}
+
+.title {
+    font-size: 48px;
+    margin-top: 20px;
+    color: white;
+}
+
+.greeting {
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
