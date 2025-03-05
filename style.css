@@ -7,7 +7,7 @@ body {
     
     background-image: url('./src/media/starb.gif'); /* Replace with your image path */
     background-repeat: repeat; /* Allows repeating if necessary */
-    background-size: auto;
+    background-size: cover;
     padding: 0;
 }
 
@@ -23,7 +23,7 @@ body {
     color: white;
 }
 .ps {
-    font-size: 6px;
+    font-size: 10px;
     color: white;
 }
 nav ul {
