@@ -1,0 +1,27 @@
+name: Deploy to Neocities
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}  # Updated to match your secret name
+          cleanup: false  # Change to true if you want to remove files not in the repo
+          neocities_supporter: false  # Set to true if you have a supporter account
+          preview_before_deploy: true  # Show deployment plan before uploading
+          dist_dir: .  # Deploy everything from the root folder
