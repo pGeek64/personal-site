@@ -5,7 +5,7 @@ body {
     text-align: center;
     margin: 0;
     
-    background-image: url('./media/starb.gif'); /* Replace with your image path */
+    background-image: url('./src/media/starb.gif'); /* Replace with your image path */
     background-repeat: repeat; /* Allows repeating if necessary */
     background-size: auto;
     padding: 0;
@@ -20,6 +20,10 @@ body {
 .greeting {
     font-size: 24px;
     margin-top: 10px;
+    color: white;
+}
+.ps {
+    font-size: 6px;
     color: white;
 }
 nav ul {
